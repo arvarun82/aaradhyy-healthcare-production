@@ -1,0 +1,15 @@
+{
+  "name": "aaradhyy-healthcare-hostinger-bootstrap",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "rm -rf aaradhyy-healthcare && tar -xzf aaradhyy-healthcare-production.tar.gz",
+    "start": "node --enable-source-maps aaradhyy-healthcare/server.js",
+    "db:push": "node aaradhyy-healthcare/db-push.js"
+  },
+  "dependencies": {
+    "nodemailer": "^8.0.5",
+    "pg": "^8.20.0"
+  }
+}
