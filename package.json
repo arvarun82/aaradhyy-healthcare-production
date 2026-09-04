@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "postinstall": "rm -rf aaradhyy-healthcare && tar -xzf aaradhyy-healthcare-production.tar.gz",
-    "start": "node --enable-source-maps aaradhyy-healthcare/server.js",
+    "start": "node --enable-source-maps server.js",
     "db:push": "node aaradhyy-healthcare/db-push.js"
   },
   "dependencies": {
