@@ -10,5 +10,8 @@ import { existsSync } from "node:fs";
     });
     }
 
-    await import("./aaradhyy-healthcare/server.js");
+    import("./aaradhyy-healthcare/server.js").catch((error) => {
+    console.error("Failed to start Aaradhyy Healthcare server", error);
+    process.exit(1);
+    });
     
